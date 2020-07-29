@@ -1,0 +1,37 @@
+<p>
+    <mat-toolbar class="lol">
+        <mat-icon id="car">directions_car</mat-icon>
+        <span id="title-tool">Car Parking</span>
+        <span class="example-spacer" id="crazy"></span>
+    </mat-toolbar>
+</p>
+
+<div class="image-background">
+
+    <form #registerForm="ngForm" class="form" id="registerForm">
+        <div class="container">
+
+            <h1 class="title">Register</h1>
+            <mat-icon id="account">account_box</mat-icon><br>
+
+            <label id="label">Name</label>
+            <input type="text" class="input" [(ngModel)]='nameHtml' name="name">
+
+            <label id="label">Document</label>
+            <input type="number" class="input" [(ngModel)]='documentHtml' name="document">
+
+            <label id="label">Age</label>
+            <input type="number" class="input" [(ngModel)]='ageHtml' name="age">
+
+            <label id="label">Password</label>
+            <input type="password" class="input" [(ngModel)]="passwordHtml" name="password">
+
+            <input type="button" class="btn-submit" value="Submit" (click)="RegisterUser(registerForm)">
+
+            <p class="link">¿Ya tienes una cuenta? <a routerLink="/homeApp">Ingresa aquí</a></p>
+
+        </div>
+
+    </form>
+
+</div>

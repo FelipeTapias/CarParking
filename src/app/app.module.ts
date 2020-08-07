@@ -11,13 +11,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatTableModule } from '@angular/material/table';
+import { CdkColumnDef } from '@angular/cdk/table';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MainUserComponent } from './main-user/main-user.component';
 import { ConfirmAccountComponent } from './confirm-account/confirm-account.component';
+import { AddCarComponent } from './add-car/add-car.component';
+import { SeeCarsComponent } from './see-cars/see-cars.component';
+import { ModelLoginComponent } from './model-login/model-login.component';
+
+
 
 
 
@@ -27,7 +35,10 @@ import { ConfirmAccountComponent } from './confirm-account/confirm-account.compo
     HomeAppComponent,
     RegisterUserComponent,
     MainUserComponent,
-    ConfirmAccountComponent
+    ConfirmAccountComponent,
+    AddCarComponent,
+    SeeCarsComponent,
+    ModelLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,10 +53,12 @@ import { ConfirmAccountComponent } from './confirm-account/confirm-account.compo
     ReactiveFormsModule,
     MatDialogModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule,
+    MatTableModule
   ],
-  entryComponents: [ConfirmAccountComponent],
-  providers: [],
+  entryComponents: [ConfirmAccountComponent, ModelLoginComponent],
+  providers: [CdkColumnDef],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

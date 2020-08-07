@@ -1,5 +1,5 @@
 .image-background {
-    background-image: url(https://www.comparaonline.com.co/blog-statics/co/uploads/2016/08/parqueadero-publico-1.jpg);
+    background-image: url(https://images5.alphacoders.com/319/thumb-1920-319578.jpg);
     background-size: cover;
     /*IMPORTANTE*/
     height: 100vh;
@@ -113,19 +113,30 @@ label {
     color: transparent;
 }
 
+.line {
+    background: green;
+}
+
 h1 {
-    width: 100%;
-    margin: auto;
+    background: rgba(0, 0, 0, 0.678);
     text-align: center;
     color: rgb(247, 136, 10);
-    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .nav {
-    padding-right: 50px;
+    padding-right: 55px;
+    padding-left: 5px;
     background: rgba(243, 153, 50, 0.582);
 }
 
 #account {
     color: white;
+}
+
+#exit {
+    margin-top: 600px;
 }

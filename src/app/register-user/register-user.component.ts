@@ -18,18 +18,14 @@ export class RegisterUserComponent implements OnInit {
   ageHtml: number;
   passwordHtml: any;
 
-  form: FormGroup;
+  userForm: FormGroup;
 
   constructor(
     public dialog: MatDialog,
     private fb: FormBuilder,
     private router: Router
-  ) { }
+  ) {
 
-  userForm: FormGroup;
-
-  onResetForm(){
-    this.userForm.reset();
   }
 
   ngOnInit(): void {
@@ -40,6 +36,7 @@ export class RegisterUserComponent implements OnInit {
   }
 
   RegisterUser(registerForm){
+    try{
      const body: UserBody = {
        name: this.nameHtml,
        document: this.documentHtml,
@@ -47,20 +44,16 @@ export class RegisterUserComponent implements OnInit {
        password: this.passwordHtml
      };
      registerForm.reset();
-     const usuario = [];
-     usuario.push(
-       {
-        name: body.name,
-        document: body.document,
-        age: body.age,
-        password: body.password
-       }
-     );
-     console.log(usuario);
+
+     console.log('Correct');
+     localStorage.setItem(JSON.stringify(body.document), JSON.stringify(body));
 
      this.openDialog();
 
      this.router.navigate(['/mainUser']);
+    }catch (e){
+      console.log('#####ERROR#####');
+    }
 
   }
 

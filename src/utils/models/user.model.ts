@@ -1,6 +1,6 @@
 export interface UserBody {
-      name: string;
-      document: number;
-      age?: number;
-      password: any;
+    name: string;
+    document: number;
+    age?: number;
+    password: any;
 }

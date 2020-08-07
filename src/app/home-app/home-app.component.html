@@ -15,13 +15,13 @@
             <mat-icon id="account">account_box</mat-icon><br>
 
             <label id="label">Document</label>
-            <input type="number" id="n1" class="input" [(ngModel)]="documentHtml">
+            <input type="number" id="n1" class="input" [(ngModel)]="documentHtml" name="document">
 
             <label id="label">Password</label>
-            <input type="password" id="n2" class="input" [(ngModel)]="passwordHtml">
+            <input type="password" id="n2" class="input" [(ngModel)]="passwordHtml" name="password">
 
 
-            <input type="button" class="btn-submit" value="Enter">
+            <input type="button" class="btn-submit" value="Enter" (click)="enterForm(loginForm)">
 
             <p class="link">¿No tienes una cuenta? <a routerLink="/register">Ingresa aquí</a></p>
 

@@ -1,0 +1,36 @@
+<p>
+    <mat-toolbar class="lol">
+        <mat-icon id="car">directions_car</mat-icon>
+        <span id="title-tool">Car Parking</span>
+        <span class="example-spacer" id="crazy"></span>
+        <button mat-raised-button color="warn" [routerLink]="'/mainUser'">return</button>
+    </mat-toolbar>
+</p>
+
+<div class="image-background">
+
+    <form #addForm="ngForm" class="form" id="addForm">
+        <div class="container">
+
+            <h1 class="title">Register car</h1>
+            <mat-icon id="account">directions_car</mat-icon><br>
+
+            <label id="label">Brand</label>
+            <input type="text" class="input" name="brand" [(ngModel)]='brandHtml'>
+
+            <label id="label">Plate</label>
+            <input type="text" class="input" name="plate" [(ngModel)]='plateHtml'>
+
+            <label id="label">Model Year</label>
+            <input type="number" class="input" name="yearModel" [(ngModel)]='brandHtml'>
+
+            <label id="label">Owner</label>
+            <input type="text" class="input" name="owner" [(ngModel)]='ownerHtml'>
+
+            <input type="button" class="btn-submit" value="Submit" (click)="addCar(addForm)">
+
+        </div>
+
+    </form>
+
+</div>

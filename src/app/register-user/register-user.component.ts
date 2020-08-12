@@ -17,6 +17,7 @@ export class RegisterUserComponent implements OnInit {
   documentHtml: number;
   ageHtml: number;
   passwordHtml: any;
+  boxHtml = 10;
 
   userForm: FormGroup;
 
@@ -41,7 +42,8 @@ export class RegisterUserComponent implements OnInit {
        name: this.nameHtml,
        document: this.documentHtml,
        age: this.ageHtml,
-       password: this.passwordHtml
+       password: this.passwordHtml,
+       box: this.boxHtml
      };
      registerForm.reset();
 

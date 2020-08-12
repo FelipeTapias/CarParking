@@ -3,4 +3,5 @@ export interface UserBody {
     document: number;
     age?: number;
     password: any;
+    box?: number;
 }

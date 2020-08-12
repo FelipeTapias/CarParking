@@ -3,4 +3,5 @@ export interface CarBody {
   plate: string;
   modelYear: number;
   owner?: string;
+  document: number;
 }

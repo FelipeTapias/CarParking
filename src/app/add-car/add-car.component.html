@@ -22,10 +22,13 @@
             <input type="text" class="input" name="plate" [(ngModel)]='plateHtml'>
 
             <label id="label">Model Year</label>
-            <input type="number" class="input" name="yearModel" [(ngModel)]='brandHtml'>
+            <input type="number" class="input" name="yearModel" [(ngModel)]='modelYearHtml'>
 
             <label id="label">Owner</label>
             <input type="text" class="input" name="owner" [(ngModel)]='ownerHtml'>
+
+            <label id="label">Document</label>
+            <input type="number" class="input" name="document" [(ngModel)]='documentHtml'>
 
             <input type="button" class="btn-submit" value="Submit" (click)="addCar(addForm)">
 

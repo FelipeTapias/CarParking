@@ -74,6 +74,7 @@ enterForm(loginForm){
     console.log('#####ERROR#####');
     console.log(`User ${this.documentStringLog} not is registered`);
     this.router.navigate(['/homeApp']);
+    this.openDialog();
   }
 }
 

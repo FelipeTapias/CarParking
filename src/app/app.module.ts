@@ -24,6 +24,7 @@ import { ConfirmAccountComponent } from './confirm-account/confirm-account.compo
 import { AddCarComponent } from './add-car/add-car.component';
 import { SeeCarsComponent } from './see-cars/see-cars.component';
 import { ModelLoginComponent } from './model-login/model-login.component';
+import { BillUserComponent } from './bill-user/bill-user.component';
 
 
 
@@ -38,7 +39,8 @@ import { ModelLoginComponent } from './model-login/model-login.component';
     ConfirmAccountComponent,
     AddCarComponent,
     SeeCarsComponent,
-    ModelLoginComponent
+    ModelLoginComponent,
+    BillUserComponent
   ],
   imports: [
     BrowserModule,
